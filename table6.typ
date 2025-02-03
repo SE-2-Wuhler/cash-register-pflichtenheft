@@ -23,10 +23,12 @@
 
   // Third row - light yellow
   table.cell(
+    stroke: (thickness: 2pt, paint: green),
     fill: rgb("#fffff0"),
   )[Als Karl Kasse möchte ich schnell und einfach die Bezahlmethode (auch bei schon aktivem Zahlvorgang) zunächst wählen und dann abbrechen/ wechseln können.],
   table.cell(fill: rgb("#fffff0"))[Als Karl Kasse möchte ich problemlos die Sprache des Systems ändern können.],
   table.cell(
+    stroke: (thickness: 2pt, paint: green),
     fill: rgb("#fffff0"),
   )[Als Karl Kasse möchte ich den Einkaufs-\ prozess mittels eines einfachen Buttons beenden/ abschließen und den Druckvorgang starten.],
   table.cell(

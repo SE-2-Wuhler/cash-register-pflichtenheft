@@ -46,8 +46,6 @@ Kunden jeden Alters und technischer Erfahrung.
 #tableContent6
 #let karlkasse = include "persona_karl_kasse.typ"
 #karlkasse
-#let kassiererkaren = include "persona_kassierer_karen.typ"
-#kassiererkaren
 #let kurtkunde = include "persona_kunde_kurt.typ"
 #kurtkunde
 #let lagerverwalterlars = include "persona_lagerverwalter_lars.typ"

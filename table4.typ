@@ -21,8 +21,9 @@
     fill: rgb("#fffff0"),
   )[Als LV möchte ich eine Warnmeldung bekommen, wenn der Bestand in den roten Bereich kommt, um Fehler zu vermeiden.],
   table.cell(
+    stroke: (thickness: 2pt, paint: green),
     fill: rgb("#fffff0"),
-  )[Als LV möchte ich Barcodes für Artikel generierenund scannen können, um Ware schneller zu identifizieren.],
+  )[Als LV möchte ich Barcodes für Artikel generieren und scannen können, um Ware schneller zu identifizieren.],
   table.cell(
     fill: rgb("#fffff0"),
   )[Als LV möchte ich neue Artikel mit ihren Stammdaten hinzufügen können, um sicherzustellen, dass alle Waren im System erfasst sind.],

@@ -4,7 +4,9 @@
   width: 297mm,
   height: 210mm,
 )
-
+#align(center)[
+  *Alle User Stories, die #text(fill: green)[grün] umrandet sind, sind in der ersten Iteration funktionsfähig.*
+]
 #table(
   columns: 3,
   inset: 5pt,
@@ -26,7 +28,7 @@
     fill: rgb("#fffff0"),
   )[Als Admin möchte ich Benutzerrollen zuweisen, damit jeder Nutzer nur auf "seine" Funktionen zugreifen kann.],
   table.cell(
-    stroke: green,
+    stroke: (thickness: 2pt, paint: green),
     fill: rgb("#fffff0"),
   )[Als Admin möchte ich neue Kassenterminals mit unserem bestehenden Network verbinden, um einen reibungslosen Datenfluss zu gewährleisten.],
   table.cell(
