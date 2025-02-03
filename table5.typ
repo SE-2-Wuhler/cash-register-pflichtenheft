@@ -23,6 +23,7 @@
     fill: rgb("#fffff0"),
   )[Als Karl Kasse möchte ich mich schnell und unkompliziert ein- und unkompliziert ein- und ausloggen, um Verzögerungen an der Kasse zu minimieren.],
   table.cell(
+    stroke: green,
     fill: rgb("#fffff0"),
   )[Als Karl Kasse möchte ich lose Ware scannen können um den Preis pro Gewichtseinheit korrekt zu erfassen],
   table.cell(
@@ -32,9 +33,11 @@
     fill: rgb("#fffff0"),
   )[Als Karl Kasse möchte ich Artikel löschen und Preise überschreiben können, um Fehler zu korrigieren und Rabattaktionen anzuwenden.],
   table.cell(
+    stroke: green,
     fill: rgb("#fffff0"),
   )[Als Karl Kassierer möchte ich Pfandbons scannen können, um Rückerstattungs-\ prozesse effizient zu gestalten.],
   table.cell(
+    stroke: green,
     fill: rgb("#fffff0"),
   )[Als Karl Kassierer möchte ich, dass die Rückerstattung automatisch erfolgt, damit der Kunde schnell und korrekt sein Pfandgeld zurückerhält.],
 )

@@ -98,7 +98,6 @@ Kunden jeden Alters und technischer Erfahrung.
 
 - Artikeldatenbank mit Produktinformationen, Preisen und Pfandwerten.
 - Kundendatenbank (optional) zur Speicherung von Präferenzen und Einkaufshistorie.
-- Sichere Speicherung der Daten gemäß den Datenschutzbestimmungen (DSGVO).
 
 == 7. Prozesse
 
@@ -114,7 +113,7 @@ Kunden jeden Alters und technischer Erfahrung.
 
 == 9. Qualität
 
-- Durchführung von Unit-Tests, Integrationstests und Systemtests.
+- Durchführung von Unit-Tests.
 - Benutzertests zur Sicherstellung der Usability.
 - Regelmäßige Wartung und Updates zur Fehlerbehebung und Performance-Optimierung.
 
@@ -126,13 +125,9 @@ Kunden jeden Alters und technischer Erfahrung.
 
 == 11. Anhänge
 
-- Glossar der Fachbegriffe.
-- Mockups der Benutzeroberfläche.
-- Detaillierte Beschreibung der Systemarchitektur.
+- Detaillierte Diagramme der Systemarchitektur.
 
 == 12. Sonstiges
 
-- Dokumentationserstellung für Benutzer und Administratoren.
-- Schulungsunterlagen für das Kassenpersonal.
-
-> *Hinweis:* Dieses Pflichtenheft ist ein erster Entwurf und kann im Laufe des Projekts erweitert und angepasst werden.
+- Dokumentationserstellung für Benutzer und Administratoren. (optional)
+- Schulungsunterlagen für das Kassenpersonal. (optional)
