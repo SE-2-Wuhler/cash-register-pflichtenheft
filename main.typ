@@ -5,25 +5,49 @@
 
 = Pflichtenheft für Selfcheckout-Kasse und Pfandautomat
 
-== 1. Einleitung
+= 1. Einleitung
 
-*Ziel:*
-Entwicklung einer benutzerfreundlichen und effizienten Software für Selfcheckout-Kassen und Pfandautomaten im Supermarktbereich.
 
-*Ergebnisse:*
-- Steigerung der Kundenzufriedenheit durch schnellere Abwicklung.
-- Reduzierung des Personaleinsatzes an herkömmlichen Kassen.
-- Optimierung des Pfandrückgabeprozesses.
+== Definition des Hauptzieles
 
-*Quantifizierbare Ziele:*
-- Verkürzung der durchschnittlichen Wartezeit um 20 %.
-- Erhöhung des Anteils der Kunden, die Selfcheckout nutzen, um 30 %.
-- Reduzierung von fehlerhaften Pfandabrechnungen um 15 %.
+Das Hauptziel der Selfcheckoutkasse ist die Entwicklung einer effizienten und benutzerfreundlichen Software für ein Kassensystem und einen Pfandautomaten im Einzelhandel. Das System soll durch moderne Technologie und intuitive Bedienung sowohl die Kundenzufriedenheit steigern als auch den Arbeitsalltag der Mitarbeiter erleichtern.
 
-== 2. Projektübersicht
+== Zweck des Dokumentes
+
+Dieses Pflichtenheft definiert die vollständigen Anforderungen und Spezifikationen für die Entwicklung der Kassensystem-Software. Es dient als verbindliche Grundlage für die Projektentwicklung und als Referenzdokument für alle Projektbeteiligten. Das Dokument beschreibt detailliert die funktionalen und nicht-funktionalen Anforderungen, die technische Architektur sowie die Benutzeroberfläche des Systems.
+
+== Klare Festlegung der Ergebnisse und Mehrwert für Kunden
+
+*Erwartete Ergebnisse:*
+- Eine moderne, intuitive Selbstbedienungskasse
+- Ein zuverlässiger, benutzerfreundlicher Pfandautomat
+- Ein effizientes Administrationssystem für das Kassenpersonal
+- Eine sichere und performante Backend-Infrastruktur
+
+*Mehrwert für Kunden:*
+- Schnellere Abwicklung des Einkaufsprozesses
+- Flexible Zahlungsmöglichkeiten (EC-Karte, Kreditkarte, PayPal, Mobile Payment)
+- Transparente Preisübersicht
+- Vereinfachte Pfandrückgabe mit Pfandbon
+
+*Mehrwert für das Unternehmen:*
+- Reduzierung der Personalkosten
+- Optimierung der Geschäftsprozesse
+- Verbesserung der Kundenzufriedenheit
+- Minimierung von Fehlern bei der Abrechnung
+
+#pagebreak()
+
+= 2. Projektübersicht
 
 *Einsatzbereich:*
-Selfcheckout-Kassen und Pfandautomaten in Supermärkten.
+Selfcheckout-Kassen und Pfandautomaten für den Einzelhandel.
+
+*Kernfunktionen:*
+- Selbstständiges Scannen und Bezahlen von Produkten
+- Automatische Pfandverrechnung
+- Intuitive Benutzerführung
+- Integration verschiedener Zahlungsmethoden
 
 *Zielgruppen:*
 Kunden jeden Alters und technischer Erfahrung.
@@ -56,22 +80,22 @@ Kunden jeden Alters und technischer Erfahrung.
 #adminalex
 
 
-== 3. Anforderungen
+= 3. Anforderungen
 
-=== 3.1 Funktionale Anforderungen
+== 3.1 Funktionale Anforderungen
 
 *Selfcheckout-Kasse:*
 - Einscannen von Artikeln über Barcode-Scanner.
 - Korrekte Preisberechnung und Anzeige des Gesamtbetrags.
 - Erfassen von Pfandbons.
 - Drucken von Kassenbons.
-- Integration verschiedener Zahlungsmethoden (bargeldlos, Karte).
+- Integration verschiedener Zahlungsmethoden.
 
 *Pfandautomat:*
 - Einscannen von Pfandflaschen und -dosen.
 - Ausgabe eines Pfandbons mit dem korrekten Betrag.
 
-=== 3.2 Nicht-funktionale Anforderungen
+== 3.2 Nicht-funktionale Anforderungen
 
 - *Usability:* Intuitive Bedienung, einfache Navigation, übersichtliche Benutzeroberfläche.
 - *Performance:* Schnelle Ladezeiten, flüssige Performance.
@@ -79,53 +103,133 @@ Kunden jeden Alters und technischer Erfahrung.
 - *Sicherheit:* Schutz vor unbefugtem Zugriff und Manipulation.
 - *Wartbarkeit:* Einfache Wartung und Aktualisierung der Software.
 
-== 4. Architektur
+= 4. Architektur
 
 - *Selfcheckout-Kasse:* Touchscreen-Terminal mit integriertem Barcode-Scanner, Bondrucker, Kartenlesegerät und optionalem Bargeldmodul.
 - *Pfandautomat:* Gehäuse mit Einwurfschacht, integriertem Barcode-Scanner und Bondrucker.
-- *Zentrale Datenbank:* Verwaltung von Artikeldaten, Preisen und Pfandinformationen.
 
-== 5. Benutzeroberfläche
+#figure(
+  image("UML.png"),
+  caption: [UML Diagramm],
+)
+
+=== Schichtenarchitektur:
+
+*Präsentationsschicht (Frontend Web):*
+- Implementiert mit React
+- Responsive Benutzeroberfläche
+- Plattformunabhängige Entwicklung
+
+*Präsentationsschicht (Frontend iOS):*
+- Implementiert mit Swift/ UIKit
+- Responsive Benutzeroberfläche
+- Optimiert für Touch-Eingabe
+
+*Geschäftslogik (Backend):*
+- Entwickelt in Java SpringBoot
+- REST-API
+- Microservice-Architektur
+- Skalierbare Komponenten
+
+*Datenbankschicht:*
+- PostgreSQL Datenbank as a service
+- Transaktionssicherheit
+
+=== Hauptkomponenten
+
+*Hardware-Integration:*
+- Barcode-Scanner-Anbindung
+- Bondrucker-Steuerung
+- Kartenlesegerät-Integration
+- Pfandautomat-Schnittstelle
+- Barcode Scanner bei Mobile mit Kamera als Alternative zum Scanner
+
+#pagebreak()
+
+= 5. Benutzeroberfläche
 
 - Übersichtliche Darstellung der Artikel und Preise.
 - Klare Benutzerführung durch den Bezahlprozess.
 - Touchscreen-optimierte Bedienung.
-- Mehrsprachigkeit.
 
-== 6. Daten
+#figure(
+  image("IMG_AF03233F8FF4-1.jpeg"),
+  caption: [Mobile UI],
+)
 
-- Artikeldatenbank mit Produktinformationen, Preisen und Pfandwerten.
-- Kundendatenbank (optional) zur Speicherung von Präferenzen und Einkaufshistorie.
+#figure(
+  image("Bild (2).png"),
+  caption: [Web UI],
+)
+#figure(
+  image("Bild (3).png"),
+  caption: [Web UI Checkout],
+)
 
-== 7. Prozesse
+#pagebreak()
 
-- Ablauf des Scan- und Bezahlvorgangs an der Selfcheckout-Kasse.
-- Prozess der Pfandrückgabe am Automaten.
-- Kommunikation zwischen Kassen, Pfandautomaten und der zentralen Datenbank.
+= 6. Daten
 
-== 8. Einschränkungen und Rahmenbedingungen
+- Artikeldatenbank mit Produktinformationen, Preisen, Pfandwerten und Transaktionshistorie
+.
+#figure(
+  image("ER (1).png"),
+  caption: [ER Diagramm],
+)
+
+= 7. Prozesse
+
+== Hauptprozesse
+=== Pfandprodukt einscannen
+*Prozessschritte: siehe Anhang Sequenzdiagramme*
+
+- Kunde scannt Pfandartikel
+- System prüft Pfandwert
+- Pfandbon wird generiert
+- Betrag wird gutgeschrieben
+
+*Fehlerbehandlung:*
+
+- Ungültiger Barcode
+- Nicht pfandpflichtiges Produkt
+- Systemfehler
+
+*Erfolgskriterien:*
+
+- Korrekte Pfandwertermittlung
+- Erfolgreicher Bondruck
+- Präzise Gutschrift
+- Kundenbestätigung
+
+= 8. Einschränkungen und Rahmenbedingungen
 
 - Kompatibilität mit vorhandener Supermarkt-Hardware.
 - Einhaltung der gesetzlichen Bestimmungen (z. B. Eichgesetz).
 - Budget und Zeitplan des Projekts.
 
-== 9. Qualität
+= 9. Qualität
 
 - Durchführung von Unit-Tests.
 - Benutzertests zur Sicherstellung der Usability.
 - Regelmäßige Wartung und Updates zur Fehlerbehebung und Performance-Optimierung.
 
-== 10. Projektmanagement
+= 10. Projektmanagement
 
 - Agile Entwicklungsmethode mit kurzen Iterationen.
 - Regelmäßige Projektmeetings und Statusberichte.
 - Risikomanagement zur frühzeitigen Identifizierung und Bewältigung von Problemen.
 
-== 11. Anhänge
+= 11. Anhänge
 
-- Detaillierte Diagramme der Systemarchitektur.
-
-== 12. Sonstiges
-
-- Dokumentationserstellung für Benutzer und Administratoren. (optional)
-- Schulungsunterlagen für das Kassenpersonal. (optional)
+#figure(
+  image("getByBarcodeId.drawio (1).png"),
+  caption: [User scans barcode at terminal],
+)
+#figure(
+  image("scanReceiptBarcode.drawio (1).png"),
+  caption: [User scans barcode to leave],
+)
+#figure(
+  image("transactionComplete.drawio (1).png"),
+  caption: [Payment flow],
+)
