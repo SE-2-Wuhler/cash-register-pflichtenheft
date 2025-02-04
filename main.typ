@@ -128,8 +128,6 @@ Kunden jeden Alters und technischer Erfahrung.
 *Geschäftslogik (Backend):*
 - Entwickelt in Java SpringBoot
 - REST-API
-- Microservice-Architektur
-- Skalierbare Komponenten
 
 *Datenbankschicht:*
 - PostgreSQL Datenbank as a service
@@ -181,7 +179,7 @@ Kunden jeden Alters und technischer Erfahrung.
 
 == Hauptprozesse
 === Pfandprodukt einscannen
-*Prozessschritte: siehe Anhang Sequenzdiagramme*
+*Prozessschritte: (siehe Anhang Sequenzdiagramme)*
 
 - Kunde scannt Pfandartikel
 - System prüft Pfandwert
